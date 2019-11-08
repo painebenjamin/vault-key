@@ -1,0 +1,123 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #DDD;
+  color: black;
+}
+
+div.page-container {
+  position: relative;
+  display: block;
+  margin: 10px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+}
+
+div.container {
+  max-width: 600px;
+}
+
+div.actions {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #666;
+}
+
+div.actions.vertical {
+  flex-flow: row wrap;
+}
+
+div.actions > * {
+  display: block;
+  width: 100%;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+input[type='button'] {
+  border-style: solid;
+  border-color: #DDD;
+  border-width: 1px;
+  outline: none;
+  padding: 5px;
+  text-align: left;
+  cursor: pointer;
+  background-color: white;
+  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.05));
+  min-width: 150px;
+}
+
+input[type='text'],
+input[type='password'],
+select {
+  padding: 5px;
+  background-color: #EEE;
+  outline: none;
+  border: none;
+  width: 250px;
+}
+
+input[type='button']:hover {
+  background-color: #F8E80C;
+  color: #444;
+}
+
+div.actions.vertical input[type='button'] {
+  border-width: 0px;
+}
+
+div.actions.vertical input[type='button']:not(:last-child) {
+  border-bottom-width: 1px;
+}
+
+div.actions.vertical hr {
+  line-height: 1px;
+  margin: 0;
+  color: black;
+}
+
+div.inputs {
+  margin-bottom: 10px;
+}
+
+div.inputs div.input {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.inputs div.input:not(:last-child){
+  margin-bottom: 5px;
+}
+
+div.inputs div.input label {
+  display: inline-block;
+  width: 125px;
+}
+
+div.code {
+  display: block;
+  padding: 10px;
+  border: 1px solid #DDD;
+}
+
+div.code h4 {
+  margin-top: -15px;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+div#used-codes div.code:not(:last-child){
+  margin-bottom: 5px;
+}
+
+div#errors {
+  margin: 5px 0;
+  color: red;
+}

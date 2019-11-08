@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="container">
+        <h2>SHiFT Account Details:</h2>
+        <div id="account_inputs" class="inputs">
+          <div class="input">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username" name="username" id="username" />
+          </div>
+          <div class="input">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" name="password" id="password" />
+          </div>
+        </div>
+        <div style="font-size: 0.75em; font-style: italic; margin-bottom: 10px;">Note: your username and password are only saved locally on your machine, and sent directly to 2K/Gearbox.</div>
+        <div class="actions vertical">
+          <input type="button" id="update" value="Update Login Information" />
+          <input type="button" id="reset" value="Revert Login Information" />
+          <input type="button" id="reset_redeemed" value="Reset Redeemed Codes" />
+        </div>
+        <h2>Preferences:</h2>
+        <div class="inputs" id="preference_inputs">
+          <div class="input">
+            <label for="auto_shift_source">Auto-SHiFT Source</label>
+            <select id="auto_shift_source" name="auto_shift_source">
+              <option id="orcz">orcz.com</option>
+            </select>
+          </div>
+          <div class="input">
+            <label for="auto_shift_platform">Auto-SHiFT Platform</label>
+            <select id="auto_shift_platform" name="auto_shift_platform"></select>
+          </div>
+          <div class="input">
+            <label for="auto_vip_source">Auto-VIP Source</label>
+            <select id="auto_vip_source" name="auto_vip_source">
+              <option id="reddit">reddit.com</option>
+            </select>
+          </div>
+        </div>
+        <h2>Redeem:</h2>
+        <div class="inputs" id="code_inputs">
+          <div class="input">
+            <label for="shift_code">SHiFT Code</label>
+            <input type="text" id="shift_code" name="shift_code" />
+            <input type="button" id="redeem_shift_code" value="Redeem" />
+          </div>
+        </div>
+        <div class="actions vertical">
+          <input type="button" id="auto_shift" value="Auto-Redeem SHiFT Codes" />
+          <input type="button" id="auto_vip" value="Auto-Redeem VIP Codes" />
+        </div>
+        <div id="errors"></div>
+      </div>
+      <div id="used_codes"></div>
+    </div>
+  </body>
+  <script src="redeemer.js"></script>
+  <script src="options.js"></script>
+</html>
