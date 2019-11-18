@@ -4,6 +4,8 @@ This is a Chrome extension that provides a highlight context menu and automatic 
 
 *This software is not affiliated with 2K® Games or Gearbox® Software in any way, and no guarantees are made about it's functionality. Borderlands™ is trademarked and owned by 2K® Games and Gearbox® Software.*
 
+A huge thanks is due to [matt1484](https://github.com/matt1484/bl3_auto_vip) for his Go application, on which this was based.
+
 ## Features
 1. Highlighted codes can be right-clicked to redeem as a SHiFT or VIP Reward.
 
